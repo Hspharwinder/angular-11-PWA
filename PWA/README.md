@@ -28,3 +28,44 @@ For test ->
  Study in detail -> https://angular.io/guide/service-worker-config
  
  Reference ->     https://medium.com/ngconf/angular-pwa-install-and-configure-858dd8e9fb07
+ 
+ [
+  '/**',           // Include all URLs.
+  '!/**/*.*',      // Exclude URLs to files.
+  '!/**/*__*',     // Exclude URLs containing `__` in the last segment.
+  '!/**/*__*/**',  // Exclude URLs containing `__` in any other segment.
+]
+
+
+ "dataGroups": [
+        {
+      "name": "blog",
+      "urls": ["https://citywoofer.com/blog/**"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "0d",
+        "timeout": "1s"
+      }
+    },
+    {
+      "name": "blogs_",
+      "urls": ["https://www.citywoofer.com/blog"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "0d",
+        "timeout": "1s"
+      }
+    },
+    {
+      "name": "blog_",
+      "urls": ["https://citywoofer.com/blog"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "0d",
+        "timeout": "1s"
+      }
+    }
+  ]
