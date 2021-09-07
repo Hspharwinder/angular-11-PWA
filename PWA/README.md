@@ -2,26 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
-## Development server
+# Step create PWA
+1. ng add @angular/pwa
+2. npm i -g http-server
+3.  Long process to run PWA application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    i. Run ng build --prod command. It will create files under dist/ folder.
+    ii. cd dist/, cd project-name, npx http-server
 
-## Code scaffolding
+    iii. Run http-server command (npm i -g http-server)
+    iv. Open
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Short process to run PWA application
+       i.  Add in package.json
+        "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/PWA"
+    NOTE: Make sure dist/your-project-name  project name, uppercase, lowercase should be same
+       ii. Run
+        npm run start-pwa
 
-## Build
+For test ->
+1. in network tab make offline and refresh page
+2. in application tab Service Workers
+    source ngsw-worker.js
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ Study in detail -> https://angular.io/guide/service-worker-config
+    Reference ->     https://medium.com/ngconf/angular-pwa-install-and-configure-858dd8e9fb07
