@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     iii. Run http-server command (npm i -g http-server)
     iv. Open
 
-    ### Short process to run PWA application
+   ### Short process to run PWA application
        
        i.  Add in package.json
        
