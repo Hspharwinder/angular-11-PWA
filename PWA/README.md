@@ -14,9 +14,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     iv. Open
 
     Short process to run PWA application
+       
        i.  Add in package.json
+       
         "start-pwa": "ng build --prod && http-server -p 8080 -c-1 dist/PWA"
+        
     NOTE: Make sure dist/your-project-name  project name, uppercase, lowercase should be same
+    
+    
        ii. Run
         npm run start-pwa
 
