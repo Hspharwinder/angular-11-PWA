@@ -5,7 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Step create PWA
 1. ng add @angular/pwa
 2. npm i -g http-server
-3.  Long process to run PWA application
+3. How to run pwa
+### Long process to run PWA application
 
     i. Run ng build --prod command. It will create files under dist/ folder.
     ii. cd dist/, cd project-name, npx http-server
@@ -13,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     iii. Run http-server command (npm i -g http-server)
     iv. Open
 
-    Short process to run PWA application
+    ### Short process to run PWA application
        
        i.  Add in package.json
        
