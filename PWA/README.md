@@ -26,4 +26,5 @@ For test ->
     source ngsw-worker.js
 
  Study in detail -> https://angular.io/guide/service-worker-config
-    Reference ->     https://medium.com/ngconf/angular-pwa-install-and-configure-858dd8e9fb07
+ 
+ Reference ->     https://medium.com/ngconf/angular-pwa-install-and-configure-858dd8e9fb07
